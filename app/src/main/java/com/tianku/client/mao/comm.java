@@ -62,7 +62,7 @@ public class comm {
     	return  System.currentTimeMillis();
     }
     
-    public static String _(String str){
+    public static String _decrypt(String str){
     	try {
         	DESPlus s = new DESPlus();
 			return s.decrypt(str);

@@ -1,20 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'tianku.keystore'
+            keyPassword '593244214'
+            storeFile file('/Users/admin/Documents/证书/Android签名/tianku.keystore')
+            storePassword '593244214'
+        }
+    }
     compileSdkVersion 19
     buildToolsVersion '19.1.0'
-
     defaultConfig {
         applicationId "com.tianku.client.mao"
         minSdkVersion 4
         targetSdkVersion 4
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
         }
+    }
+    productFlavors {
     }
 }
 

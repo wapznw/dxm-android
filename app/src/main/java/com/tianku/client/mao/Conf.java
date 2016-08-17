@@ -7,8 +7,8 @@ import android.preference.PreferenceManager;
 import android.widget.Toast;
 
 public class Conf {
-    public static final String API_HOST = "http://192.168.1.102:88";
-    //public static final String API_HOST="http:/sms.50r.cn";
+//    public static final String API_HOST = "http://192.168.1.102:88";
+    public static final String API_HOST="http:/sms.50r.cn";
 
     /**
      * 读取数据
