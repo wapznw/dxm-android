@@ -1,12 +1,15 @@
 apply plugin: 'com.android.application'
 
+Properties properties = Properties.newInstance();
+properties.load(new FileReader("local.properties"))
+
 android {
     signingConfigs {
         config {
-            keyAlias 'tianku.keystore'
-            keyPassword '593244214'
-            storeFile file('/Users/admin/Documents/证书/Android签名/tianku.keystore')
-            storePassword '593244214'
+            keyAlias properties.getProperty("keyAlias")
+            keyPassword properties.getProperty("keyPassword")
+            storeFile file(properties.getProperty("storeFile"))
+            storePassword properties.getProperty("storePassword")
         }
     }
     compileSdkVersion 19
@@ -15,6 +18,8 @@ android {
         applicationId "com.tianku.client.mao"
         minSdkVersion 4
         targetSdkVersion 4
+        versionCode 20
+        versionName "1.96"
     }
     buildTypes {
         release {
