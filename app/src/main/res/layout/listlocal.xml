@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="38dp"
+	android:orientation="vertical">
+	<RelativeLayout android:background="@drawable/list_item" android:id="@+id/resend"
+		android:layout_height="38dp" android:layout_width="fill_parent">
+
+
+	<RelativeLayout android:background="@drawable/list_item"
+		android:layout_height="38dp" android:layout_width="fill_parent"
+		android:id="@+id/resend" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true" android:paddingRight="2dp">
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:textColor="#000" android:id="@+id/log_phone"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/log_img"
+			android:hint="手机号码" android:gravity="center"
+			android:layout_alignBottom="@+id/log_time"></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:textColor="#000" android:id="@+id/log_time"
+			android:layout_width="wrap_content" android:hint="接收时间" android:gravity="center|right" android:layout_alignParentRight="true"></TextView>
+		<TextView android:layout_marginRight="19dp"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@+id/log_status"
+			android:layout_alignParentTop="true" android:id="@+id/log_status"
+			android:layout_width="wrap_content" android:visibility="gone"
+			android:text="status"></TextView>
+		<TextView android:layout_marginRight="19dp"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@+id/log_time"
+			android:layout_alignParentTop="true" android:id="@+id/_id"
+			android:layout_width="wrap_content" android:visibility="gone"
+			android:text="_id"></TextView>
+		<TextView android:layout_marginRight="19dp"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@+id/log_time"
+			android:layout_alignParentTop="true" android:id="@+id/log_result"
+			android:layout_width="wrap_content" android:visibility="gone"
+			android:text="result"></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content"
+			android:textColor="#000" android:id="@+id/log_cont"
+			android:hint = "短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容" android:maxLines="1"
+			android:layout_width="wrap_content" android:text=""
+			android:gravity="left" android:layout_alignLeft="@+id/log_phone" android:layout_below="@+id/log_phone" android:layout_alignParentBottom="true"></TextView>
+	</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

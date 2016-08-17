@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部条 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout01" android:layout_width="fill_parent"
+	android:layout_height="47dp" android:background="@drawable/bg_header"
+	android:gravity="center_vertical" android:layout_alignParentTop="true">
+	<!--标题 -->
+	<TextView android:id="@+id/title" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_marginTop="12dp" android:layout_marginLeft="3dp"
+		android:background="@null" android:clickable="true" android:tag="title"
+		style="@style/logo_button" />
+
+	<!-- 设置 -->
+<TextView android:layout_width="wrap_content"
+	android:layout_height="fill_parent" 
+	style="@style/simple_button"
+	android:id="@+id/top_setting" 
+	android:text="@string/omenu_settings"
+	android:layout_centerVertical="true" 
+	android:layout_alignParentRight="true"
+	android:layout_marginRight="10dp"></TextView>
+	<!-- 发布消息按钮 -->
+
+	<!-- 刷新按钮 -->
+
+
+
+	<!-- Global Progress Bar -->
+	<ProgressBar android:id="@+id/progress_bar"
+		android:layout_width="fill_parent" android:layout_height="2dip" 
+		android:layout_alignParentBottom="true" style="@style/gProgressBar.Horizontal" android:visibility="gone"/>
+	
+</RelativeLayout>
+    
+      

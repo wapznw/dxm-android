@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">天酷短信猫</string>
+	<!-- 页面Title -->
+	<string name="page_title_home">首页</string>
+	<!-- 错误提示 -->
+	<string name="error_not_authorized">帐号验证失败，请重新登录.</string>
+	<string name="error_server_down">服务器暂时无法响应.</string>
+	<!-- 按钮提示 -->
+	<string name="page_label_get_more">获取更多</string>
+	<string name="page_label_go_back">返回</string>
+	<!-- options menu -->
+	<string name="omenu_signout">注销</string>
+	<string name="omenu_refresh">刷新</string>
+	<string name="omenu_preferences">选项</string>
+	<string name="omenu_settings">设置</string>
+	<string name="omenu_search">搜索</string>
+	<string name="omenu_about">关于</string>
+	<string name="omenu_exit">退出</string>
+	<!-- context menu -->
+	<string name="cmenu_reply">回复</string>
+	<string name="cmenu_retweet">转发</string>
+	<string name="cmenu_add_fav">管理</string>
+	<string name="cmenu_delete">删除</string>
+	<string name="cmenu_share">分享</string>
+	<string name="cmenu_clipboard">复制到剪贴板</string>
+	<string name="cmenu_more">更多</string>
+	<!-- Login页面 -->
+	<string name="login_label_username">用户账号:</string>
+	<string name="login_label_password">登陆密码:</string>
+	<string name="login_input_username">输入账号</string>
+	<string name="login_input_password">输入密码</string>
+	<string name="login_jizhu_password">记住密码</string>
+	<string name="login_auto_login">自动登录</string>
+	<string name="Check_the_Save_Password_Auto_Login">自动登录请勾选保存密码</string>
+	<string name="login_label_signin">登 录</string>
+	<string name="login_status_logging_in">登录中…</string>
+	<string name="login_status_logout_in">注销中…</string>
+	<string name="login_status_null_username_or_password">帐号和密码不能为空。</string>
+	<string name="login_status_invalid_username_or_password">帐号或密码错误，请重新输入。</string>
+	<string name="login_status_network_or_connection_error">网络错误，请稍后再试。</string>
+	<string name="login_register_link">
+		没有帐号？
+		<a href="http://sms.8eoo.com/index.php/Register/index">注册</a>
+	</string>
+	<string name="login_status_failure">登录失败。</string>
+	<string name="login_status_ok">登录成功</string>
+	<!-- Write页面 -->
+	<string name="write_label_send">发送</string>
+	<string name="write_label_you_can_type_prefix">可以输入</string>
+	<string name="write_label_you_can_type_suffix">字</string>
+
+	<!-- About -->
+	<string name="about_introduce_title">关于程序\n</string>
+	<string name="about_introduce">天酷短信猫是一个运行在Android平台的应用程序。本程序把收的短信发送到指定的地址。
+	</string>
+	<string name="about_links_title">相关链接\n</string>
+	<string name="about_links">天酷主页: http://www.8eoo.com
+		\n短信猫主页:
+		http://sms.8eoo.com\n短信猫社区:http://bbs.8eoo.com</string>
+	<string name="about_developers_title">开发者</string>
+	<string name="about_developers">天酷\nE-mail:wapznw@qq.com\n
+		QQ群:49141861\n有任何问题请反馈或加入QQ群\n加本人QQ一律不回!</string>
+	<string name="about_thanks_title">\n感谢\n</string>
+	<string name="about_thanks">感谢所有对这个项目提供了切实帮助的人们。</string>
+	<string name="about_label_ok">了解</string>
+	<string name="about_label_feedback">反馈</string>
+	<string name="copyright">天酷网络 © 2012</string>
+	<string name="about_update">检测更新</string>
+	<string name="about_back">返回程序</string>
+	<string name="about_yijian">反馈意见</string>
+	<!-- 通用 -->
+	<string name="general_lable_ok">确定</string>
+	<string name="general_lable_cancel">取消</string>
+	<string name="please_wait">请稍后…</string>
+	<string-array name="entries">
+		<item>主服务器</item>
+	</string-array>
+	<string-array name="entries_val">
+		<item>http://sms.50r.cn</item>
+	</string-array>
+	<string-array name="jieshou">
+		<item>标记已读</item>
+		<item>直接删除</item>
+		<item>不处理</item>
+	</string-array>
+	<string-array name="jieshou_val">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string name="Refresh_in">刷新中</string>
+	<string name="Number">号码</string>
+	<string name="Content">内容</string>
+	<string name="Receive">接收:</string>
+	<string name="Success">成功:</string>
+	<string name="Failure">失败:</string>
+	<string name="Instruction">指令:</string>
+	<string name="time">时间</string>
+	<string name="status">状态</string>
+	<string name="View_status">查看状态</string>
+	<string name="Article">条</string>
+	<string name="Update_instructions">更新指令中…</string>
+	<string name="Update_command_is_successful">更新指令成功</string>
+	<string name="Update_command_fails">更新指令失败</string>
+	<string name="exit_info">退出提示</string>
+	<string name="exit_canm">你确定要退出安卓短信猫?</string>
+	<string name="background_run">后台运行</string>
+	<string name="all_exit">完全退出</string>
+	<string name="localsms">本机短信</string>
+	<string name="local">本机</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <PreferenceCategory android:title="自动登录"> <CheckBoxPreference android:summaryOff="已关闭自动登录"
+        android:summaryOn="已开启自动登录" android:title="是否开启自动登录" android:key="autologin"></CheckBoxPreference>
+        <EditTextPreference android:title="账号" android:key="username" android:summary="&lt;NULL&gt;"
+        android:dialogMessage="输入sms.8eoo.com注册的账号" android:dependency="autologin"></EditTextPreference>
+        <EditTextPreference android:title="密码" android:summary="&lt;NULL&gt;" android:dialogMessage="输入账号登陆密码"
+        android:key="passwrods" android:dependency="autologin"></EditTextPreference>
+        </PreferenceCategory> -->
+    <PreferenceCategory android:title="短信接收设置">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sms_model"
+            android:summaryOff="当前:兼容模式"
+            android:summaryOn="当前:实时接收"
+            android:title="实时接收"/>
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/jieshou"
+            android:entryValues="@array/jieshou_val"
+            android:key="sms_setread"
+            android:summary="接收短信处理方式"
+            android:title="收到短信"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="sms_model"
+            android:key="sms_othernotice"
+            android:summary="当接收短信猫信息时其他应用不提示"
+            android:title="屏蔽其他应用通知"/>
+        <CheckBoxPreference
+            android:key="sms_filter"
+            android:summaryOff="未启用,(转发所有收到的信息,适合手机专做猫用)"
+            android:summaryOn="已启用,(只转发包含指令的信息)"
+            android:title="信息过滤"/>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="电话注册">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="CALL_STATUS"
+            android:summaryOff="未启用来电监听"
+            android:summaryOn="已启用来电已监听"
+            android:title="来电监听"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="AUTO_CUT"
+            android:summaryOff="不挂断"
+            android:summaryOn="来电自动挂断"
+            android:title="自动挂断来电"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="Filter_Book"
+            android:summaryOff="未启用"
+            android:summaryOn="已启用"
+            android:title="过滤通信录号码"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="短信回复">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="REG_RECOVERY"
+            android:summaryOff="未启用"
+            android:summaryOn="已启用"
+            android:title="注册回复"/>
+        <EditTextPreference
+            android:dialogMessage="手机号:{$phone},密码:{$password}"
+            android:key="REG_RECOVERY_STR"
+            android:summary="注册成功后回复给注册用户的信息内容"
+            android:title="注册回复短信内容"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PASS_RECOVERY"
+            android:summaryOff="未启用"
+            android:summaryOn="已启用"
+            android:title="修改密码回复"/>
+
+        <EditTextPreference
+            android:dialogMessage="手机号:{$phone},密码:{$password}"
+            android:key="PASS_RECOVERY_STR"
+            android:summary="用户修改密码后后回复给注册用户的信息内容"
+            android:title="修改密码回复短信内容"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="system_setting"
+        android:title="系统设置">
+         <ListPreference android:key="api_url" android:title="设置服务器" android:summary="选择一个可用的服务器"
+            android:entries="@array/entries" android:entryValues="@array/entries_val"
+            android:defaultValue="http://sms.50r.cn"/>
+        <!--<EditTextPreference
+            android:dialogMessage="与服务器通信的验证密码"
+            android:dialogTitle="输入验证密码"
+            android:key="auth_code"
+            android:summary="与服务器通信的验证密码"
+            android:title="验证密码"/>-->
+        <CheckBoxPreference
+            android:key="boot_run"
+            android:summaryOff="程序开启自动运行"
+            android:summaryOn="已选择开机运行程序"
+            android:title="开机启动"/>
+        <!-- <CheckBoxPreference android:title="自动检测最新版本" android:summaryOn="已启用"
+            android:key="AUTO_CHECK_UPDATE" android:summaryOff="未启用" android:defaultValue="true"></CheckBoxPreference> -->
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+

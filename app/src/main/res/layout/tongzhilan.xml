@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部条 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout01" android:layout_width="fill_parent"
+	android:background="@drawable/playlist_move_background" android:gravity="center_vertical"
+	android:layout_alignParentTop="true" android:padding="4dp" android:layout_height="fill_parent">
+	<!--标题 -->
+	<ImageView android:src="@drawable/icon" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/imageView1"
+		android:layout_centerVertical="true" android:layout_alignParentLeft="true"></ImageView>
+	<TextView android:id="@+id/tong_title" android:textColor="@color/lvse"
+		android:layout_width="wrap_content" android:text="标题"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="wrap_content" android:layout_alignTop="@+id/imageView1"
+		android:layout_toRightOf="@+id/imageView1"></TextView>
+	<TextView android:id="@+id/liuliang_jieshou"
+		android:layout_width="wrap_content" android:text="20Kb"
+		android:drawableLeft="@drawable/sym_call_outgoing"
+		android:layout_height="wrap_content" android:layout_alignBaseline="@+id/liuliang_fs"
+		android:layout_alignBottom="@+id/liuliang_fs" android:layout_toLeftOf="@+id/liuliang_fs"
+		android:layout_marginRight="10dp"></TextView>
+	<TextView android:id="@+id/liuliang_fs" android:layout_width="wrap_content"
+		android:text="10Kb" android:drawableLeft="@drawable/net_upload"
+		android:layout_height="wrap_content" android:layout_alignBottom="@+id/imageView1"
+		android:layout_alignParentRight="true"></TextView>
+	<TextView android:id="@+id/tongzhi_cont" android:layout_width="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/liuliang_jieshou" android:layout_alignBottom="@+id/liuliang_jieshou" android:layout_toRightOf="@+id/imageView1"></TextView>
+</RelativeLayout>
+    

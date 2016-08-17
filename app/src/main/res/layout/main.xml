@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation='vertical' android:weightSum="1" android:background="#D6E5EF">
+
+	<!-- Header -->
+	<include layout="@layout/header" />
+
+	<!-- Main content area. -->
+
+	<!-- 提示栏 : 已废弃 -->
+	<TextView android:id="@+id/progress_text"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true" style="@style/statusbar"
+		android:visibility="gone" />
+
+	<!-- footer TODO: 更换背景色 -->
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="100dp" android:layout_width="fill_parent"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:background="@drawable/theme_background_green">
+		<ImageView android:src="@drawable/scan_pid_bg" 
+			android:id="@+id/imageView2"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:layout_marginLeft="20dp" android:layout_width="70dp"></ImageView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:orientation="vertical" android:id="@+id/linearLayout2"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/imageView2"
+			android:layout_marginLeft="15dp" android:layout_alignBottom="@+id/imageView2"
+			android:layout_alignTop="@+id/imageView2" android:paddingTop="10dp">
+			<TextView android:id="@+id/textView1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Receive"></TextView>
+			<TextView android:id="@+id/textView2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Success"></TextView>
+			<TextView android:id="@+id/textView3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Failure"></TextView>
+			<TextView android:id="@+id/textView4"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Instruction"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:orientation="vertical" android:id="@+id/linearLayout3"
+			android:layout_height="wrap_content" android:layout_alignTop="@+id/linearLayout2"
+			android:layout_toRightOf="@+id/linearLayout2"
+			android:layout_alignBottom="@+id/linearLayout2" android:paddingTop="10dp">
+			<TextView android:text="TextView" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/jieshou"></TextView>
+			<TextView android:text="TextView" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/chenggong"></TextView>
+			<TextView android:text="TextView" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/shibai"></TextView>
+			<TextView android:text="TextView" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/zhiling"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/scan_sweeper"
+	android:layout_alignTop="@+id/imageView2" android:layout_alignLeft="@+id/imageView2" android:id="@+id/animo" android:layout_alignBottom="@+id/imageView2" android:layout_alignRight="@+id/imageView2" android:layout_width="70dp"></ImageView>
+	</RelativeLayout>
+	<ListView android:id="@+id/listView1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:cacheColorHint="#fff"
+	android:divider="@drawable/list_line"
+	android:fastScrollEnabled="false"
+	android:focusable="false"
+	 ></ListView>
+	<include android:id="@+id/footer" layout="@layout/footer" />
+
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部条 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout01" android:layout_width="fill_parent"
+	android:layout_height="47dp" android:background="@drawable/bg_header"
+	android:gravity="center_vertical" android:layout_alignParentTop="true">
+
+	<!-- BACK Button -->
+	<Button android:id="@+id/top_back" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+		style="@style/simple_button" android:text="@string/page_label_go_back" />
+
+	<!-- Global Progress Bar -->
+	<ProgressBar android:id="@+id/progress_bar"
+		android:layout_width="fill_parent" android:layout_height="2dip"
+		android:layout_alignParentBottom="true" style="@style/gProgressBar.Horizontal" />
+	<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:text="@string/localsms"></TextView>
+
+</RelativeLayout>
+    

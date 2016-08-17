@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="30dp"
+	android:orientation="vertical">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:background="@drawable/list_item" android:id="@+id/resend"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_height="wrap_content" android:id="@+id/log_img"
+			android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+			android:layout_width="wrap_content" android:src="@drawable/update_finished"
+			android:layout_alignBottom="@+id/log_cont"
+			android:layout_alignParentTop="true"></ImageView>
+		<TextView android:text="phone" android:layout_width="wrap_content"
+			android:textColor="#000" android:id="@+id/log_phone"
+			android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_alignParentTop="true" android:layout_toRightOf="@+id/log_img"
+			android:layout_alignParentBottom="true" android:gravity="center"></TextView>
+		<TextView android:text="time" android:layout_width="wrap_content"
+			android:textColor="#000" android:id="@+id/log_time"
+			android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" android:layout_marginRight="7dp"
+			android:layout_alignParentTop="true" android:gravity="center|right"></TextView>
+		<TextView android:textColor="#000"
+			android:text="contentcon" android:layout_width="wrap_content"
+			android:id="@+id/log_cont" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_toRightOf="@+id/log_phone" android:layout_marginLeft="5dp"
+			android:layout_alignBottom="@+id/log_phone"
+			android:singleLine="true" android:maxWidth="150dp" android:gravity="fill_vertical" android:layout_toLeftOf="@+id/log_time"></TextView>
+		<TextView android:text="status" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:visibility="gone"
+	android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/log_status"
+	android:layout_marginRight="19dp" android:id="@+id/log_status"></TextView>
+	
+	<TextView android:text="_id" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:visibility="gone"
+	android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/log_time"
+	android:layout_marginRight="19dp" android:id="@+id/_id"></TextView>
+	
+	<TextView android:text="result" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:visibility="gone"
+	android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/log_time"
+	android:layout_marginRight="19dp" android:id="@+id/log_result"></TextView>
+	</RelativeLayout>
+</LinearLayout>

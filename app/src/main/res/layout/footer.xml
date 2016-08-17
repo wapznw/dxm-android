@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="50dp" android:padding="0dp"
+	android:background="@drawable/maintab_toolbar_bg">
+	<!-- android:background="@drawable/twitter_bottom_bar_bg"> -->
+	<TextView android:id="@+id/footer_btn_share"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" style="@style/footer_button"
+		android:drawableTop="@drawable/detail_share_selected" android:text="@string/local"/>
+	<TextView android:layout_height="fill_parent" android:id="@+id/footer_btn_fav"
+		android:layout_weight="1" android:drawableTop="@drawable/detail_fav_highlight_selected"
+		android:text="@string/cmenu_add_fav" android:layout_width="fill_parent"
+		style="@style/footer_button"></TextView>
+	<TextView android:id="@+id/footer_btn_retweet"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" style="@style/footer_button"
+		android:drawableTop="@drawable/detail_forward_selected" android:text="@string/omenu_signout" />
+	<TextView android:layout_height="fill_parent" android:id="@+id/footer_btn_about"
+	android:layout_weight="1" android:drawableTop="@drawable/detail_comment_selected"
+	android:text="@string/omenu_about" android:layout_width="fill_parent"
+	style="@style/footer_button"></TextView>
+	<TextView android:id="@+id/footer_btn_exit"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" style="@style/footer_button" android:text="@string/omenu_exit"
+		android:drawableTop="@drawable/detail_forward_selected" />
+
+
+</LinearLayout>
